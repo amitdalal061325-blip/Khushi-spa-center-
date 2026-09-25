@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi Spa Center | Spa & Wellness in Meerut</title>
+  <meta name="description" content="Khushi Spa Center, Kankerkheda Bypass, NH-58 Highway, Meerut. Relaxation, body wellness, stress relief and wellness care. Open 24 hours.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7b2cbf">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#faf7fc;color:#26212b;line-height:1.6}
+    a{text-decoration:none}
+    .topbar{background:#32134f;color:#fff;text-align:center;padding:8px 12px;font-size:14px}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #00000012}
+    .nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    .logo{font-size:23px;font-weight:800;color:#7025a9}
+    .logo span{color:#d24a9a}
+    .navlinks{display:flex;gap:20px}
+    .navlinks a{color:#3e3347;font-weight:600}
+    .hero{min-height:560px;display:flex;align-items:center;background:
+      linear-gradient(90deg,#2b123ee8 0%,#5b247eb8 48%,#00000025 100%),
+      url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=85') center/cover}
+    .hero-inner{max-width:1100px;width:100%;margin:auto;padding:70px 22px;color:#fff}
+    .badge{display:inline-block;background:#ffffff22;border:1px solid #ffffff55;padding:7px 13px;border-radius:30px;margin-bottom:16px}
+    h1{font-size:clamp(38px,7vw,68px);line-height:1.05;margin-bottom:18px}
+    .hero p{font-size:19px;max-width:650px;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 21px;border-radius:30px;font-weight:700;display:inline-block}
+    .btn-primary{background:#fff;color:#67219c}
+    .btn-whatsapp{background:#20a85a;color:#fff}
+    .btn-outline{border:1px solid #fff;color:#fff}
+    section{max-width:1100px;margin:auto;padding:65px 20px}
+    .section-title{text-align:center;margin-bottom:35px}
+    .section-title h2{font-size:34px;color:#3a2049}
+    .section-title p{color:#756a7b}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;padding:25px 18px;border-radius:18px;box-shadow:0 8px 25px #4c1b6812;text-align:center;border:1px solid #eee3f2}
+    .icon{font-size:34px;margin-bottom:10px}
+    .card h3{color:#51226c;margin-bottom:7px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about img{width:100%;height:380px;object-fit:cover;border-radius:25px}
+    .about h2{font-size:36px;color:#3a2049;margin-bottom:14px}
+    .about p{color:#665c6a;margin-bottom:14px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px}
+    .info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .info-box{background:#fff;border-radius:18px;padding:24px;box-shadow:0 8px 25px #4c1b6812}
+    .info-box h3{color:#57256f;margin-bottom:7px}
+    .cta{max-width:none;background:linear-gradient(135deg,#4c176c,#9a3b9c);color:#fff;text-align:center}
+    .cta-inner{max-width:900px;margin:auto;padding:65px 20px}
+    .cta h2{font-size:36px;margin-bottom:12px}
+    footer{background:#24152d;color:#ddd;text-align:center;padding:30px 18px}
+    footer strong{color:#fff}
+
+    .booking{background:#fff;border-radius:22px;padding:28px;box-shadow:0 8px 25px #4c1b6812;max-width:850px;margin:auto}
+    .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .booking input,.booking select,.booking textarea{width:100%;padding:13px;border:1px solid #ddd1e5;border-radius:10px;font-size:15px;background:#fff}
+    .booking textarea{min-height:90px;resize:vertical}
+    .booking .full{grid-column:1/-1}
+    .payment-box{margin-top:20px;padding:20px;border-radius:16px;background:#faf5fd;border:1px solid #eadcf0}
+    .payment-box h3{color:#57256f;margin-bottom:6px}
+    .payment-note{font-size:13px;color:#756a7b;margin-top:8px}
+    @media(max-width:600px){.booking-grid{grid-template-columns:1fr}}
+    .mobile-buttons{display:none}
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero{min-height:600px}
+      .cards{grid-template-columns:1fr 1fr}
+      .about{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .info{grid-template-columns:1fr}
+      .mobile-buttons{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#fff;box-shadow:0 -3px 15px #0002}
+      .mobile-buttons a{flex:1;text-align:center;padding:12px;font-weight:700;color:#fff}
+      .mobile-buttons .call{background:#6d2aa1}
+      .mobile-buttons .wa{background:#1eaa59}
+      body{padding-bottom:55px}
+    }
+    @media(max-width:500px){
+      .cards{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+      .gallery img{height:250px}
+      .hero p{font-size:17px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Khushi Spa Center",
+    "description":"Spa and wellness center in Meerut.",
+    "telephone":"+91-7465011011",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kankerkheda Bypass, NH-58 Highway",
+      "addressLocality":"Meerut",
+      "addressRegion":"Uttar Pradesh",
+      "addressCountry":"IN"
+    },
+    "openingHours":"Mo-Su 00:00-24:00"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">✨ Khushi Spa Center • Open 24 Hours • Meerut</div>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Khushi <span>Spa Center</span></div>
+      <nav class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Photos</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="badge">🌿 Relax • Refresh • Wellness</div>
+        <h1>Khushi Spa Center</h1>
+        <p>A peaceful place for relaxation, body wellness, stress relief and wellness care in Meerut.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="tel:+917465011011">📞 Call Now</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/917465011011" target="_blank">💬 WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Khushi+Spa+Center+Kankerkheda+Bypass+NH-58+Meerut" target="_blank">📍 Directions</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Wellness-focused services in a comfortable environment.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="icon">💆</div><h3>Relaxation</h3><p>Unwind and enjoy a calm wellness experience.</p></div>
+        <div class="card"><div class="icon">🌿</div><h3>Body Wellness</h3><p>Wellness care designed around relaxation and comfort.</p></div>
+        <div class="card"><div class="icon">🧘</div><h3>Stress Relief</h3><p>A peaceful setting to help you relax and refresh.</p></div>
+        <div class="card"><div class="icon">✨</div><h3>Wellness Care</h3><p>Personal care in a clean and welcoming environment.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=85" alt="Spa wellness room">
+        <div>
+          <h2>Welcome to Khushi Spa Center</h2>
+          <p>Khushi Spa Center is located at Kankerkheda Bypass on NH-58 Highway, Meerut.</p>
+          <p>Our goal is to provide a comfortable, peaceful and professional wellness environment.</p>
+          <p><strong>Open 24 Hours</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-title">
+        <h2>Our Photos</h2>
+        <p>A preview of the peaceful spa experience.</p>
+      </div>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=85" alt="Spa interior">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85" alt="Wellness treatment room">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=85" alt="Relaxation room">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85" alt="Spa room">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85" alt="Wellness space">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85" alt="Spa care">
+      </div>
+    </section>
+
+
+    <section id="booking">
+      <div class="section-title">
+        <h2>Advance Booking & Online Payment</h2>
+        <p>Book your preferred time in advance and pay your advance online.</p>
+      </div>
+
+      <div class="booking">
+        <div class="booking-grid">
+          <input id="bname" type="text" placeholder="Your Name" required>
+          <input id="bphone" type="tel" placeholder="Mobile Number" required>
+          <input id="bdate" type="date" required>
+          <input id="btime" type="time" required>
+          <select id="bservice">
+            <option value="">Select Service</option>
+            <option>Relaxation</option>
+            <option>Body Wellness</option>
+            <option>Stress Relief</option>
+            <option>Wellness Care</option>
+          </select>
+          <input id="badvance" type="number" min="0" placeholder="Advance Amount (₹)">
+          <textarea id="bnote" class="full" placeholder="Any special request?"></textarea>
+        </div>
+
+        <div class="buttons" style="margin-top:18px">
+          <button class="btn btn-whatsapp" type="button" onclick="sendBooking()" style="border:0;cursor:pointer">💬 Book on WhatsApp</button>
+          <a class="btn btn-primary" href="#payment">💳 Pay Advance</a>
+        </div>
+
+        <div class="payment-box" id="payment">
+          <h3>💳 Online Advance Payment</h3>
+          <p>Payment option can be connected to your UPI ID or a payment gateway.</p>
+          <p class="payment-note">For real online payment, your UPI ID/payment gateway details must be added here. Until then, customers can submit their booking through WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Visit Khushi Spa Center</h2>
+        <p>Contact us or get directions to our location.</p>
+      </div>
+      <div class="info">
+        <div class="info-box"><h3>📍 Address</h3><p>Kankerkheda Bypass, NH-58 Highway, Meerut, Uttar Pradesh</p></div>
+        <div class="info-box"><h3>📞 Phone</h3><p><a href="tel:+917465011011">7465011011</a></p></div>
+        <div class="info-box"><h3>🕐 Hours</h3><p>Open 24 Hours</p></div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <div class="cta-inner">
+        <h2>Ready to Relax?</h2>
+        <p>Call or WhatsApp Khushi Spa Center for information and appointments.</p>
+        <br>
+        <div class="buttons" style="justify-content:center">
+          <a class="btn btn-primary" href="tel:+917465011011">📞 Call Now</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/917465011011" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Khushi Spa Center</strong></p>
+    <p>Kankerkheda Bypass, NH-58 Highway, Meerut</p>
+    <p>© 2026 Khushi Spa Center. All rights reserved.</p>
+  </footer>
+
+  <div class="mobile-buttons">
+    <a class="call" href="tel:+917465011011">📞 Call</a>
+    <a class="wa" href="https://wa.me/917465011011" target="_blank">💬 WhatsApp</a>
+  </div>
+
+<script>
+function sendBooking(){
+  const name=document.getElementById('bname').value.trim();
+  const phone=document.getElementById('bphone').value.trim();
+  const date=document.getElementById('bdate').value;
+  const time=document.getElementById('btime').value;
+  const service=document.getElementById('bservice').value;
+  const advance=document.getElementById('badvance').value;
+  const note=document.getElementById('bnote').value.trim();
+
+  if(!name || !phone || !date || !time || !service){
+    alert('Please fill Name, Mobile, Date, Time and Service.');
+    return;
+  }
+
+  const msg =
+    'Hello Khushi Spa Center, I want to make an advance booking.%0A%0A' +
+    'Name: ' + encodeURIComponent(name) + '%0A' +
+    'Mobile: ' + encodeURIComponent(phone) + '%0A' +
+    'Date: ' + encodeURIComponent(date) + '%0A' +
+    'Time: ' + encodeURIComponent(time) + '%0A' +
+    'Service: ' + encodeURIComponent(service) + '%0A' +
+    'Advance: ₹' + encodeURIComponent(advance || 'Not specified') + '%0A' +
+    'Note: ' + encodeURIComponent(note || 'None');
+
+  window.open('https://wa.me/917465011011?text=' + msg, '_blank');
+}
+</script>
+
+</body>
+</html>
